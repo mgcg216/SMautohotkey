@@ -120,6 +120,7 @@ Avg0:
 {
 Gui, Submit, NoHide
 Keywait, v, D
+send, {Backspace}
 send, =AVERAGE(C34,C36,C38,C40,C42,C44,C46,C48,C50,C52){Enter}
 return
 }
@@ -128,6 +129,7 @@ Avg1:
 {
 Gui, Submit, NoHide
 Keywait, v, D
+send, {Backspace}
 send, =AVERAGE($C$35,$C$37,$C$39,$C$41,$C$43,$C$45,$C$47,$C$49,$C$51,$C$53)
 return
 }
@@ -161,6 +163,7 @@ return
 RV:
 {
 Keywait, v, D
+send, {Backspace}
 send, Sensing RV - V_in = 5 {Enter}
 send, MIN{Tab}MAX{Tab}PRE-GAIN{Tab}GAIN{Enter}
 send, =MIN($C:$C){Tab}=MAX($C:$C){Tab}=($E$3-$D$3)/5{Tab}=$F$3*2.148{Enter}
@@ -170,6 +173,7 @@ return
 EnRV:
 {
 Keywait, v, D
+send, {Backspace}
 send, Sensing RV - V_in = 5 {Enter}
 send, MIN{Tab}MAX{Tab}PRE-GAIN{Tab}GAIN{Enter}
 send, =MIN($C:$C){Tab}=MAX($C:$C){Tab}=($E$3-$D$3)/2.8{Tab}=$F$3*2.148{Enter}
@@ -179,6 +183,7 @@ return
 RA:
 {
 Keywait, v, D
+send, {Backspace}
 send, Sensing RV - V_in = 5 {Enter}
 send, MIN{Tab}MAX{Tab}PRE-GAIN{Tab}GAIN{Enter}
 send, =MIN($C:$C){Tab}=MAX($C:$C){Tab}=($E$3-$D$3)/2.3{Tab}=$F$3*2.148{Enter}
@@ -188,6 +193,7 @@ return
 LV:
 {
 Keywait, v, D
+send, {Backspace}
 send, Sensing RV - V_in = 5 {Enter}
 send, MIN{Tab}MAX{Tab}PRE-GAIN{Tab}GAIN{Enter}
 send, =MIN($C:$C){Tab}=MAX($C:$C){Tab}=($E$3-$D$3)/4{Tab}=$F$3*2.148{Enter}
